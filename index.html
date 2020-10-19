@@ -182,11 +182,11 @@
         // offsetHeight is the height of the nav bar then we add that to the padding of the body so that the content doesnt jump when the nav gets fixed because fixed removes its space from the dom // 
         document.body.style.paddingTop = nav.offsetHeight + 'px'
         document.body.classList.add('fixed-nav')
-        content.style.marginLeft = nav.offsetWidth + 'px' // My Bonus piece //
+        content.style.maxWidth = '50%'
       } else {
         document.body.style.paddingTop = 0
         document.body.classList.remove('fixed-nav')
-        content.style.marginLeft = 'auto'
+        content.style.maxWidth = '45%'
       }
 
     }
